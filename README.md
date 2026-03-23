@@ -15,3 +15,42 @@ One of the first things I discovered was that most of the disk images floating a
 * u.config
 * u.alpha
 ```
+
+the file `bd.data` is the main configuration file for C-Net, when you configure the system those bits are stored in there, here's an example (after converting to ASCII):
+
+```
+8
+0
+8
+0
+8
+0
+8
+0
+8
+0
+8
+0
+UL
+3
+ 10
+C-Net 12.0 (c)1987 Perspective
+169,2,141,2,76,2
+```
+
+What I think those things are used for:
+
+* 8's and 0's: the device ID's used for the various diskettes that the system operates using, during installation/configuration you're asked for these.
+* UL: the prefix used by user ID's on the system, in this case that's what I picked.
+* 3: I think this is the identifier for the modem type in use, in my case I selected option 3 from the configuration menu which is the 1670 modem.
+* 10: No idea what this is
+* I would have to assume this is just a copyright message string?
+* The last line I have no idea.
+
+To further clean things out and set up for a basic system the following files can also be removed, if they're present:
+
+```
+* etc.stats
+* etc.errlog
+* etc.log
+```
