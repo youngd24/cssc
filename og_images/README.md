@@ -15,7 +15,7 @@ cnet12ucr.d64     | Sourced from someone in the C-Net FB group
 
 ## cnet12bbsdoc.d64
 
-This was one of the first images I tried and had work. It appears to be an archive copy of a BBS named "The Lyon's Den" operated by a user named Maelstrom.
+This was one of the first images I tried and had work. It appears to be an archive copy of a BBS named "The Lyon's Den" operated by a user named Maelstrom. It has been HIGHLY configured and modded and is notably missing p.EN so it's nearly impossible to manage users using it as is. However when it's reconfigured it does run and answer on a real C64 using a real 1670 modem.
 
 * Maelstrom user: https://csdb.dk/scener/?id=6238
 * Lyon's Den BBS: https://csdb.dk/bbs/?id=1559
@@ -178,4 +178,81 @@ Unit 8 drive 0: D64 disk image attached: cnet12crk.d64.
 1    "bd.data"          seq 
 110 blocks free.
 Unit 8 drive 0: D64 disk image detached: cnet12crk.d64.
+```
+
+## cnet12ucr.d64
+
+Another one given to me by a person in the Facebook C-Net group, supposedly a full copy of the original C-Net 12 files and NOT the cracked one but a real deal install. This one would need the license dongle to operate if it truly is the original verison. I started it up, it loads but hits a CPU halt in Vice which I am assuming is where it's checking for the dongle in port 2.
+
+### File Listing
+```
+OPENCBM:  sucessfully loaded opencbm.dll
+D64 disk image recognised: cnet12ucr.d64, 35 tracks.
+Unit 8 drive 0: D64 disk image attached: cnet12ucr.d64.
+0 "c-net 64        " 12 2a
+1    "bt"               prg 
+48   "cn"               prg 
+49   "ml"               prg 
+25   "intro"            prg 
+10   "copy-all"         prg 
+1    "dv change"        prg 
+1    ""...etc/prg disk" usr 
+10   "p.su"             prg 
+20   "p.cf"             prg 
+6    "p.stack"          prg 
+9    "p.access"         prg 
+7    "p.diredit"        prg 
+13   "p.em"             prg 
+12   "p.f"              prg 
+26   "p.lo"             prg 
+11   "p.n"              prg 
+26   "p.nu"             prg 
+46   "p.s"              prg 
+14   "p.t"              prg 
+40   "p.u/d"            prg 
+4    "p.weed"           prg 
+5    "p.BA"             prg 
+12   "p.BB"             prg 
+2    "p.BC"             prg 
+2    "p.CD"             prg 
+7    "p.CP"             prg 
+3    "p.CW"             prg 
+5    "p.E"              prg 
+6    "p.ED"             prg 
+9    "p.EN"             prg 
+3    "p.EX"             prg 
+4    "p.LD"             prg 
+2    "p.NL"             prg 
+2    "p.PC"             prg 
+2    "p.PW"             prg 
+6    "p.ST"             prg 
+10   "p.UL"             prg 
+9    "p.VF"             prg 
+3    "p.WF"             prg 
+1    ""...system disk"  usr 
+10   "proto 0"          prg 
+5    "proto 1"          prg 
+1    "proto 2"          prg 
+12   "proto 3"          prg 
+3    "menu 1"           seq 
+4    "menu 2"           seq 
+3    "menu 3"           seq 
+5    "menu 4"           seq 
+4    "menu 5"           seq 
+3    "menu 6"           seq 
+3    "menu 7"           seq 
+4    "menu 8"           seq 
+1    "menu 9"           seq 
+1    "sys.login"        seq 
+1    "sys.phonebook"    seq 
+1    "sys.config"       seq 
+1    "sys.new user"     seq 
+1    "sys.start"        seq 
+1    "sys.welcome"      seq 
+1    "sys.end"          seq 
+2    "sys.cred"         seq 
+14   "sys.inst"         seq 
+80   "sys.say"          rel 
+31 blocks free.
+Unit 8 drive 0: D64 disk image detached: cnet12ucr.d64.
 ```
