@@ -6,6 +6,8 @@ This started, as so many retro projects do, as something "simple": I was after a
 
 I'm starting to document what I'm finding on how to get a version 12 BBS of C-Net up and running and in my case that has a heavy focus on using real hardware. The reference standard I'm after is a regular Commodore 64 using a userport 1670 modem at 1200 baud. I have a small phone network so I can run real analog voice and dial in locally, I'd use SIP for this but the 1670 doesn't do well there as it has little to no error correction.
 
+For now this is really just a brain dump of what I find with the eventual goal of producing a clean version 12 d64 image that can be used to start up a working, clean-slate, BBS on real hardware or under Vice.
+
 ## Starting Out
 
 One of the first things I discovered was that most of the disk images floating around the Internet are copies, dumps or archives of existing BBS's and, as a result, have been previously configured. The first problem there is being able to log in to it as as Sysop account and do really anything. Best as I can tell these accounts and passwords are stored in the file `u.config`, something is also stored in `u.alpha` though I'm not entirely sure what. The fastest way to get things back to a reconfigured state is to delete the following files from the d64 image:
